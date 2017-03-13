@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Build a Tribute Page </title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+    
+  <div class="text-center" ng-app="app" ng-controller="controller1">
+    <h1>{{sheldon.heading}}</h1>
+
+    <h3>{{sheldon.subheading1}}</h3>
+
+    <img ng-src="{{sheldon.imageURL}}" />
+
+    <h5>{{sheldon.subheading2}}</h5>
+    <div class="well">
+      <ul ng-repeat="item in quotes">
+        <li>{{item.quote}}</li>
+      </ul>
+    </div>
+    <h5>{{sheldon.subheading3}}<a ng-href="{{sheldon.linkURL}}" target="blank"> here:</a></h5>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
